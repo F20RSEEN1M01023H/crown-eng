@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add the Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Add your custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Animated Navbar</title>
+    <style>
+        /* Custom CSS */
+        .navbar-nav .nav-link {
+            transition: all 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            font-size: 20px;
+            color: darkslategray;
+            transform: scale(1.1);
+        }
+
+        /* Custom CSS for text on the carousel slides */
+        .carousel-item {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .carousel-text {
+            color: #fff;
+            text-shadow: 2px 2px 2px #000;
+
+        }
+
+        .p {
+            font-size: 25px;
+            font-family: sans-serif;
+        }
+
+        .images {
+            border-radius: 34px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/logo.png" alt="Logo" height="120px" width="200px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="templateCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#templateCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#templateCarousel" data-slide-to="1"></li>
+            <li data-target="#templateCarousel" data-slide-to="2"></li>
+            <li data-target="#templateCarousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner ">
+            <div class="carousel-item active" style="background-image: url('/assets/1.jpg') ; height: 600px;">
+                <div class="row align-items-center  " style="height: 500px;">
+                    <div class="col ">
+                        <div class="carousel-text text-center ">
+                            <h3>Welcome To Our World</h3>
+                            <h2>Crown Engineering</h2>
+                            <h4>Power solution</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carousel-item" style="background-image: url('/assets/2.jpg'); height: 600px;">
+                <div class="carousel-text">
+                    <h3>Template 2</h3>
+                    <p>This is the second template description.</p>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('/assets/3.jpg'); height: 600px;">
+                <div class="carousel-text">
+                    <h3>Template 3</h3>
+                    <p>This is the third template description.</p>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('/assets/4.jpg'); height: 600px;">
+                <div class="carousel-text">
+                    <h3>Template 4</h3>
+                    <p>This is the fourth template description.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#templateCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#templateCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="container-fluid mt-5" style="height: 400px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <h1 class="text-success fw-bolder p-2">
+                        About Info</h1>
+                    <p class="h5 p-2">Crown Engineering was established in <span class="text-danger">1997</span> with
+                        the aim of providing professional contracting services in the field of Electrical Engineering.
+                        The company is fully capable and in a position to meet the requirements of its Client, both
+                        quality wise, time wise and in a cost effective manner with professional commitments. We are
+                        fully equipped to handle and complete any size of Projects within the required time frame. We
+                        have a team of well trained and experienced Engineering and supervisors and supporting Staff,
+                        who are capable to undertake any challenging projects.</p>
+                    <button class="btn btn-outline-primary rounded mx-2 p-2">Read More....</button>
+                    <button class="btn btn-outline-primary mx-4 p-2 ">Veiw Company Profile</button>
+                </div>
+                <div class="col-5 mt-5 p-3">
+                    <img src="/assets/2.jpg" alt="" width="100%" class="images ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-info">
+        <div class="container">
+            <div class="row " style="height: 300px;">
+                <div class="col mt-4">
+                    <img src="/assets/5.jpg" alt="" height="250px" width="100%" class="images">
+                </div>
+                <div class="col mt-4">
+                    <img src="/assets/6.jpg" alt="" height="250px" width="100%" class="images">
+                </div>
+                <div class="col mt-4">
+                    <img src="/assets/7.jpg" alt="" height="250px" width="100%" class="images">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="container">
+            <div class="row align-items-center" style="height: 400px;">
+                <div class="col-5 mt-5 p-3">
+                    <img src="/assets/8.jpg" alt="" width="100%" class="images mt-4 ">
+                </div>
+                <div class="col-7">
+                    <h1 class="text-info fw-bolder p-2">
+                        Our Vision</h1>
+                    <p class="p p-2">Crown engineering dream is to be the construction company in our selected areas,
+                        wanted after by possible customers, and employment crown engineering for our path best in
+                        trustworthy performance, cost effectiveness, and first-rate practical complexity. To outclass in
+                        providing engineering solutions and services through continuous development</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-info">
+        <div class="container">
+            <div class="row align-items-center" style="height: 400px;">
+                <div class="col">
+                    <img src="/assets/9.jpg" alt="" height="250px" width="100%" class="images">
+                </div>
+                <div class="col ">
+                    <img src="/assets/10.jpg" alt="" height="250px" width="100%" class="images">
+                </div>
+                <div class="col">
+                    <img src="/assets/11.jpeg" alt="" height="250px" width="100%" class="images">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="container">
+            <div class="row align-items-center" style="height: 500px;">
+
+                <div class="col-7">
+                    <h1 class="text-danger fw-bolder p-2">
+                        Our Mission</h1>
+                    <p class="p p-2">Deliver excellence products and facilities to the whole gratification of our
+                        clients and exploit revenues for all investors through best use of incomes. To indorse good
+                        supremacy, business values, and a harmless employed setting with a stout sense of communal
+                        accountability and first-rate practical complexity. To outclass in providing engineering
+                        solutions and services through continuous development.</p>
+                </div>
+                <div class="col-5  mt-3">
+                    <img src="/assets/12.jpg" alt="" width="100%" class="images mt-4 ">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-info">
+        <div class="container">
+            <div class="row  align-items-center" style="height: 350px;">
+                <div class="col ">
+                    <img src="/assets/13.jpg" alt="" height="250px" width="100%" class="images">
+                </div>
+                <div class="col ">
+                    <img src="/assets/14.jpg" alt="" height="250px" width="100%" class="images">
+                </div>
+                <div class="col ">
+                    <img src="/assets/15.jpeg" alt="" height="250px" width="100%" class="images">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="container">
+            <div class="row align-items-center" style="height: 400px;">
+                <div class="col-5 ">
+                    <img src="/assets/16.jpeg" alt="" width="100%" class="images ">
+                </div>
+                <div class="col-7 p-2">
+                    <h1 class="text-success fw-bolder ">
+
+                        Customer Advisory</h1>
+                    <p class="h5 p-2">It is special group. Any problem with the running too many power shut downs, too
+                        many break downs, burning or motors, problems not traceable, any assignment which is bothering
+                        you, can be left to us to get the most appropriate and timely solution. The team which
+                        experience for handling all complicated problems shall definitely visit your existing plant or
+                        setting</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-info">
+        <div class="container">
+            <div class="row  align-items-center" style="height: 350px;">
+                <div class="col ">
+                    <img src="/assets/13.jpg" alt="" height="250px" width="100%" class="images">
+                </div>
+                <div class="col ">
+                    <img src="/assets/14.jpg" alt="" height="250px" width="100%" class="images">
+                </div>
+                <div class="col ">
+                    <img src="/assets/15.jpeg" alt="" height="250px" width="100%" class="images">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-3 " style="height: 1100px;">
+        <div class="container text-center fw-bolder">
+            <h1 class="text-danger mt-5 ">Our services</h1>
+            <hr class="bg-danger" style="width: 100%; height: 3px;">
+            <div class="row  align-items-center" style="height: 330px;">
+                <div class="col ">
+                    <h2>MATV System</h2>
+                    <img src="/assets/17.jpg" alt="" height="250px" width="100%" class="images">
+                </div>
+                <div class="col ">
+                    <h2>CCTV System</h2>
+                    <img src="/assets/18.jpg" alt="" height="250px" width="100%" class="images">
+                </div>
+                <div class="col ">
+                    <h2>Fire Alarm System</h2>
+                    <img src="/assets/19.png" alt="" height="250px" width="100%" class="images">
+                </div>
+            </div>
+            <div class="row  align-items-center" style="height: 330px;">
+                <div class="col ">
+                    <h2>Building Services</h2>
+                    <img src="/assets/20.jpg" alt="" height="250px" width="100%" class="images">
+                </div>
+                <div class="col ">
+                    <h2>Light System</h2>
+                    <img src="/assets/21.jpg" alt="" height="250px" width="100%" class="images">
+                </div>
+            </div>
+            <div class="row  align-items-center" style="height: 330px;">
+                <div class="col ">
+                    <h2>Telephone Network</h2>
+                    <img src="/assets/22.jpg" alt="" height="250px" width="100%" class="images">
+                </div>
+                <div class="col ">
+                    <h2>Cable Trays</h2>
+                    <img src="/assets/23.jpg" alt="" height="250px" width="100%" class="images">
+                </div>
+                <div class="col ">
+                    <h2>Switch Gear System</h2>
+                    <img src="/assets/24.jpg" alt="" height="250px" width="100%" class="images">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-light">
+        <div class="container text-center">
+            <div class="row align-items-center justify-content-around " style="height: 400px;">
+                <div class="col-3 border border-danger mx-4">
+
+                    <h3>Creditable Integrity</h3>
+                    <p>Value talent cultivation and encourage creative innovation</p>
+                </div>
+                <div class="col-3 border border-danger mx-4">
+
+                    <h3>Active Team Work</h3>
+                    <p>Follow organizational hardness and press on actual team-work</p>
+                </div>
+                <div class="col-3 border border-danger mx-4">
+
+                    <h3>Excellence Assurance</h3>
+                    <p>Confirm first and best of product excellence and manufacturing facilities</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Add the Bootstrap JS and Popper.js for responsive navigation -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
